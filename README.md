@@ -14,10 +14,10 @@ Created for Dr. Peter Jenson's 2020 Spring CS 3505 ("Software Practices II") cla
 
 # MakeFile changes
 
-- If you wish to add this codec to any existing version of ffmpeg, ensure to modify the respective MakeFiles
+- If you wish to add this codec to any existing version of ffmpeg, ensure to modify the correct MakeFiles with the following lines:
 
 - OBJS-$(CONFIG_ASIF_DEMUXER) += asifdemux.o
-OBJS-$(CONFIG_ASIF_MUXER) += asifmux.o
+- OBJS-$(CONFIG_ASIF_MUXER) += asifmux.o
 
 - OBJS-$(CONFIG_ASIF_DECODER) += asifdec.o
-OBJS-$(CONFIG_ASIF_ENCODER)  += asifenc.o
+- OBJS-$(CONFIG_ASIF_ENCODER)  += asifenc.o
