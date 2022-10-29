@@ -1,8 +1,8 @@
 # FFMPEG-cs3505
 
-Created for Dr. Peter Jenson's 2020 Spring CS 3505 ("Software Practices II") class. Project contians a codec for an "asif" file format through the implementation of a muxer/demuxer and encoder/decoder. 
+Created for Dr. Peter Jenson's 2020 Spring Software Practices II class. Project contians a codec for a custom file format through the implementation of a muxer/demuxer and encoder/decoder. 
 
-# "asif" file format
+# File format
 
 - +0:	Four characters "asif"	To identify the data as "asif" data
 - +4:	32-bit little endian int	Sample rate (frequency)
@@ -12,7 +12,7 @@ Created for Dr. Peter Jenson's 2020 Spring CS 3505 ("Software Practices II") cla
 - +14+n:	8-bit unsigned data samples for channel 1 sample and (n-1) deltas (in order) for channel 1. (optional, may not be present in single channel data)
 - ...etc...:	Samples for additional channels may be present
 
-# MakeFile changes
+# MakeFile Changes
 
 - If you wish to add this codec to any existing version of ffmpeg, ensure to modify the correct MakeFiles with the following lines:
 
