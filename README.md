@@ -1,4 +1,4 @@
-# FFMPEG-cs3505
+# FFMPEG custom codec
 
 Created for Dr. Peter Jenson's 2020 Spring Software Practices II class. Project contians a codec for a custom file format through the implementation of a muxer/demuxer and encoder/decoder. 
 
