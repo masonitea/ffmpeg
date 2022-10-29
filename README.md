@@ -2,7 +2,7 @@
 
 Created for Dr. Peter Jenson's 2020 Spring Software Practices II class. Project contians a codec for a custom file format through the implementation of a muxer/demuxer and encoder/decoder. 
 
-# File format
+# asif File format
 
 - +0:	Four characters "asif"	To identify the data as "asif" data
 - +4:	32-bit little endian int	Sample rate (frequency)
